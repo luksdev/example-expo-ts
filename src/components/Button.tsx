@@ -1,7 +1,6 @@
 import { TouchableOpacity, Text, TouchableOpacityProps } from "react-native";
 
 interface IButton extends TouchableOpacityProps {
-  onPress?: () => void;
   bgColor?: string;
   color?: string;
   p?: "sm" | "md" | "lg";
@@ -12,7 +11,6 @@ interface IButton extends TouchableOpacityProps {
 }
 
 const Button: React.FC<IButton> = ({
-  onPress,
   bgColor,
   color,
   mx,
@@ -23,7 +21,6 @@ const Button: React.FC<IButton> = ({
 }: IButton) => {
   return (
     <TouchableOpacity
-      onPress={onPress}
       style={{
         backgroundColor: bgColor || "#8257E5",
         paddingHorizontal: 16,

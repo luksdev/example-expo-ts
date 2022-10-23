@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, StyleSheet, Alert } from "react-native";
+import { View, Alert } from "react-native";
 import Button from "../components/Button";
 import SafeFlex from "../components/container/SafeFlex";
 import IconButton from "../components/IconButton";
