@@ -14,7 +14,6 @@ const SafeFlex: React.FC<ISafeFlex> = ({ children, bgColor, p }) => {
       style={{
         flex: 1,
         backgroundColor: bgColor || "#121214",
-        justifyContent: "center",
       }}
     >
       <View
